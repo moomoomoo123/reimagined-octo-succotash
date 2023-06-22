@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="daisy.jpg">
+        <center>
+            <h3>AI PING PONG GAME</h3>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Instructions</button>
+
+            <br><br>  
+            <button class="btn btn-success" onclick="startGame()" id="start">Play Game</button> 
+            <br><br>
+            <button class="btn btn-danger" onclick="restart()" id="start">Restart</button> 
+            <br><br>
+            <h3 id="status" class="btn btn-warning"></h3>
+            <br><br>
+            <div id="canvas"></div>
+
+            <div id="div1" class="modal fade ">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" data-dismiss="modal">&times;</button>
+                      <h4>Instructions</h4>
+                    </div>
+            
+                    <div class="modal-body">
+                      <h3>Use your mouse to move the paddle around to prevent the green ball from going past you.</h3>
+                      <h3>Remain alert and attempt to collect as many points as you can against the computer.</h3>
+                      <h3>Good luck!</h3>
+                    </div>
+                  </div>
+              </div>
+          </div>  
+
+        </center>
+
+        <script src="main.js"></script>
+
+        <div class="copy_right_footer">
+          Developed by - Arya Khajuria
+      </div>
+    </body>
+</html>
+
